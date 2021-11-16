@@ -1,0 +1,137 @@
+/* Nouvelles rÃ¨gles si la fenÃªtre fait au plus 950px de large */
+@media screen and (max-width: 950px) {
+  @import url("https://fonts.googleapis.com/css?family=Roboto:700");
+  @font-face {
+    font-family: "Genericons";
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.woff")
+        format("woff"),
+      url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/53819/genericons-regular-webfont.eot")
+        format("truetype");
+  }
+  @keyframes showTopText {
+    0% {
+      transform: translate3d(0, 100%, 0);
+    }
+    40%,
+    60% {
+      transform: translate3d(0, 50%, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  @keyframes showBottomText {
+    0% {
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .animated-title {
+    color: rgb(168, 168, 168);
+    font-family: Roboto, Arial, sans-serif;
+    height: 90vmin;
+    text-align: center;
+    left: 50%;
+    position: absolute;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    width: 90vmin;
+  }
+
+  .animated-title .text_bottom .para {
+    position: absolute;
+    top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 6em;
+  }
+
+  .animated-title > div {
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+  .animated-title > div div {
+    font-size: 12vmin;
+    padding: 2vmin 0;
+    position: absolute;
+  }
+  .animated-title > div div span {
+    display: block;
+  }
+  .animated-title > div.text-top {
+    border-bottom: 1vmin solid rgb(255, 255, 255);
+    top: 0;
+  }
+  .animated-title > div.text_top div {
+    animation: showTopText 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    transform: translate(0, 100%);
+  }
+  .animated-title > div.text_top div span:first-child {
+    color: #868686;
+  }
+  .animated-title > div.text_bottom {
+    bottom: 0;
+  }
+  .animated-title > div.text_bottom div {
+    animation: showBottomText 0.5s;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
+    top: -80px;
+    transform: translate(0, -100%);
+  }
+
+  .animated-title > div.text_bottom .spe1 {
+    animation: showBottomText 0.5s;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
+    top: -25px;
+    transform: translate(0, -100%);
+  }
+
+  .animated-title > div.text_bottom .spe {
+    animation: showBottomText 0.5s;
+    animation-delay: 1.9s;
+    animation-fill-mode: forwards;
+    top: 30px;
+    transform: translate(0, -100%);
+  }
+
+  header {
+    display: flex; /* Transformation en flexbox */
+    padding: 0; /* Suppression des marges internes */
+    justify-content: center; /* Alignements des liens dans le menu */
+    /* background-color: rgba(0, 0, 0, 0.658);*/
+  }
+
+  header li {
+    list-style-type: none; /* Suppression des puces */
+  }
+
+  header a {
+    display: block; /* Transformation en block */
+    min-width: 90px; /* Largeur minimale des liens */
+    background-color: #05050528;
+    margin: 0.5rem; /* Marges externes (1 valeurs = 4 directions) */
+    padding: 0.4rem 0; /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    text-align: center; /* Centrage du texte */
+    color: #fff; /* Couleur du texte */
+    text-decoration: none; /* Suppression du soulignement */
+    border: 1px solid rgb(255, 255, 255); /* Ajout d'une bordure */
+    border-radius: 4px; /* Arrondis des bordures */
+    transition: all 1s; /* Ajout des effets de transition */
+  }
+
+  header a:hover {
+    background-color: #05050500;
+    color: #33a3ff;
+    border-color: #00a2ff;
+  }
+}
