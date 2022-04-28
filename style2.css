@@ -69,6 +69,7 @@ header a:hover {
   box-shadow: none;
   margin: 0px;
   font-size: 1.2em;
+  color: rgb(233, 216, 216)
 }
 
 .banner_inner .g_item_text p {
@@ -137,6 +138,7 @@ header a:hover {
 .banner_inner2 {
   text-align: center;
   font-size: 1.2em;
+  color: rgb(233, 216, 216)
 }
 .banner_inner2 :hover {
   color: #766dff;
@@ -144,17 +146,20 @@ header a:hover {
 .banner_inner2 img {
   border-radius: 10px;
   box-shadow: black 5px 2px 5px;
+  
 }
 .banneriprog {
   text-align: center;
   font-size: 1.2em;
 }
 
+
 /* 3 eme acticle */
 
 .banner_inner3 {
   text-align: center;
   font-size: 1.2em;
+  color: rgb(233, 216, 216)
   
 }
 
@@ -162,6 +167,7 @@ header a:hover {
 .banner_inner4 {
   text-align: center;
   font-size: 1.2em;
+  color: rgb(233, 216, 216)
   
 }
 
@@ -169,5 +175,44 @@ header a:hover {
 .banner_inner5 {
   text-align: center;
   font-size: 1.2em;
+  color: rgb(233, 216, 216)
   
+}
+
+
+.img-fluid2 {
+  width: 150vh;
+  height: auto;
+  border-radius: 10px;
+  transition: transform .2s; /* Animation */
+}
+
+.img-fluid2:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px) {
+
+  .img-fluid2 {
+    width: 50vh;
+    height: auto;
+    border-radius: 10px;
+    transition: transform .2s; /* Animation */
+  
+  }
+
+
+  .img-fluid {
+    width: 50vh;
+    height: auto;
+    border-radius: 10px;
+    transition: transform .2s; /* Animation */
+    display: block;
+    margin: auto;
+    padding : 0px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
 }
