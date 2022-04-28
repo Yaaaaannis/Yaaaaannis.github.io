@@ -191,7 +191,7 @@ header a:hover {
   transform: scale(1.1);
 }
 
-@media only screen and (min-width: 400px) {
+@media(min-width: 425px) and (max-width: 1388px) {
 
   .img-fluid2 {
     width: 50vh;
@@ -216,3 +216,5 @@ header a:hover {
     font-size: 20px;
   }
 }
+
+
