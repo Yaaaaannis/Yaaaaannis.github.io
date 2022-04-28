@@ -215,6 +215,15 @@ header a:hover {
   .text {
     font-size: 20px;
   }
+  .banner_inner {
+  width: 40vh;
+  height: auto;
+  border-radius: 10px;
+  transition: transform .2s; /* Animation */
+  display: block;
+  margin: 70px;
+  padding : 0px;
+}
 }
 
 
